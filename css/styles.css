@@ -308,3 +308,124 @@
     width: 500px;
 }
 
+.mobile {
+    display: none;
+}
+
+/* mq de mobile: Desktop first */
+@media screen and (max-width:600px){
+
+    /* NAV-BAR */
+    .nav-bar {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-bar ul {
+        list-style: none;
+        justify-content: end;
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-bar ul li a.pagina-activa {
+        border-bottom: none;
+    }
+
+    /* Portada */
+    /* Navbar con imagen de fondo para el index.html */
+    .portada_navbar{
+        background-position: center center; /* Centra la imagen en X y en Y si no entra entera */
+        height: 100vh;
+    }
+
+    .tamaño-carousel {
+        margin: 0%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .boton_optionen{
+        margin-left: 0px;
+    }
+
+    /* OPTIONEN */
+
+    .card-size {
+        max-width: 35%;
+    }
+
+    .card-text {
+        display: none;
+    }
+
+    /* ÜBER UNS */
+
+    .nosotros {
+        margin-right: 45px;
+    }
+
+    .contenido-uber-uns .logo {
+        max-width: 100%;
+    }
+
+    /* KONTAKT */
+
+    .formulario {
+        width: 100%;
+        padding: 35px;
+        margin-left: 0px;
+    }
+
+    .contenido-kontakt .boton-enviar {
+        margin-left: 0px;
+    }
+
+    /* FOOTER */
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: inherit;
+    }
+
+    .footer-grid{
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background-color: #E7CAA3;
+    }
+    
+    .footer-grid .contenido-footer-grid {
+        display: grid;
+    
+        /* filas y columnas */
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(4, 1fr);
+    
+        /* espacios entre filas y columnas */
+        gap: 0px 20px;
+    
+        /* centrado */
+        justify-items: center;
+        align-items: center;
+    }
+
+    .logo-slogan {
+        display: inline;
+        margin-right: 0px;
+    }
+
+    .redes-sociales {
+        display: inline;
+        margin-left: 0px;
+    }
+}
