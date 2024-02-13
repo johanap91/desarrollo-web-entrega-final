@@ -18,6 +18,7 @@
     border-color: rgba(0, 0, 0, 0.25);
     border-style: solid;
     border-radius: $border-radius;
+    transition: transform .2s;
 
     img {
         border-top-left-radius: 10px;
@@ -33,4 +34,8 @@
         text-align: center;
         
     }
+}
+
+.card-event:hover {
+    transform: scale(1.05); 
 }

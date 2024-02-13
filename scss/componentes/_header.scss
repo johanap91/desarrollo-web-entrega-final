@@ -30,6 +30,11 @@
                 font-size: 18px;
                 padding: 0px 15px;
                 color: $color-texto;
+                transition: transform .2s;
+            }
+
+            a:hover {
+                transform: scale(1.1);
             }
 
             a.pagina-activa {

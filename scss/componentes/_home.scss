@@ -42,6 +42,11 @@
         color: rgb(255, 255, 255);
         border-radius: $border-radius;
         border-style: none;
+        transition: .2s;
+    }
+
+    .boton_optionen:hover {
+        background-color: rgb(212 66 1);
     }
 }
 

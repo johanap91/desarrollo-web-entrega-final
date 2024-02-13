@@ -13,7 +13,7 @@
 }
 
 .contenido-kontakt {
-    margin: 40px;
+    margin: $margin;
 
     .titulo-destacado{
         margin-left: 0px;
@@ -21,13 +21,18 @@
 
     .boton-enviar{
         padding: 10px 10px;
-        margin-top: 40px;
+        margin-top: $margin;
         right: 20px;
         background-color:rgba(213, 101, 51, 1);
         color: rgb(255, 255, 255);
         border-radius: $border-radius;
         border-style: none;
         margin-left: 85%;
+        transition: .2s;
+    }
+
+    .boton-enviar:hover {
+        background-color: rgb(212 66 1);
     }
 }
 

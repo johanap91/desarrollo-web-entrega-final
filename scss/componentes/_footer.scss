@@ -26,7 +26,6 @@
 
 .logo-slogan {
     display: inline;
-    margin-right: 40px;
 
     .logo{
         height: 60px;
@@ -35,7 +34,7 @@
 
 .redes-sociales {
     display: inline;
-    margin-left: 40px;
+    margin-left: $margin;
 
     .logo{
         height: 30px;
@@ -46,5 +45,4 @@
     display: block;
     margin: auto;
     height: 40px;
-    margin-top: 50px;
 }
