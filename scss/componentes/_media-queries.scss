@@ -1,5 +1,98 @@
 @import '../base/mixin';
 @import '../base/variables';
+
+/* mq de tablet: Desktop first */
+@media screen and (min-width:600px) and (max-width:1024px){
+    /* Navbar Header */
+    .nav-bar {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+
+        ul {
+            list-style: none;
+            justify-content: end;
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+
+            li {
+                a.pagina-activa {
+                    border-bottom: none;
+                    text-decoration:underline
+                }
+            }
+        }
+    }
+
+    /* Footer */
+
+    .bandera {
+        margin-right: 10px;
+    }
+
+    .logo-slogan {
+        margin-left: 10px;
+    }
+
+    /* Index - Portada */
+    /* Imagen de fondo para el index.html */
+    .portada_navbar{
+        background-position: center center; /* Centra la imagen en X y en Y si no entra entera */
+        height: 100vh;
+    }
+
+    .contenedor-de-menus {
+        .tamaño-carousel {
+            margin: 0%;
+            margin-top: 50px;
+            margin-bottom: $margin;
+        }
+
+        .boton_optionen{
+            margin-left: 0px;
+        }
+    }
+
+    /* OPTIONEN */
+
+    .contenido-optionen{
+        .grupo-cards{
+            .card-size {
+                max-width: 35%;
+            }
+        }
+    }
+
+    .card-text {
+        display: none;
+    }
+
+    /* ÜBER UNS */
+
+    .nosotros {
+        margin-right: 45px;
+    }
+
+    /* KONTAKT */
+
+    .formulario {
+        width: 100%;
+        padding: 35px;
+        margin-left: 0px;
+    }
+
+    .contenido-kontakt {
+        .boton-enviar {
+            margin-left: 0px;
+        }
+    }
+
+}
 /* mq de mobile: Desktop first */
 @media screen and (max-width:600px){
 
@@ -23,6 +116,7 @@
             li {
                 a.pagina-activa {
                     border-bottom: none;
+                    text-decoration:underline
                 }
             }
         }
