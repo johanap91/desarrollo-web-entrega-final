@@ -1,0 +1,52 @@
+@import '../base/mixin';
+@import '../base/variables';
+/* INDEX - Portada */
+/* Imagen de fondo para el index.html */
+.portada_navbar{
+    background-image: url("../multimedia/img/NUEVA.jpg");
+    height: 1000px;
+    background-size: cover;
+}
+
+.portada{
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 535px;
+        object-fit: cover;
+    }
+}
+
+/* INDEX - Optionen */
+.titulo-destacado{
+    margin: $margin;
+}
+
+.contenedor-de-menus {
+    margin: $margin;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    .tamaño-carousel {
+        margin: 20%;
+        margin-top: 50px;
+        margin-bottom: 90px;
+    }
+
+    .boton_optionen{
+        padding: 10px 10px;
+        margin-top: $margin;
+        margin-left: 75%;
+        background-color:rgba(213, 101, 51, 1);
+        color: rgb(255, 255, 255);
+        border-radius: $border-radius;
+        border-style: none;
+    }
+}
+
+.imagen_centrada{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

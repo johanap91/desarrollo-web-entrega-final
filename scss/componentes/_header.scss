@@ -1,0 +1,46 @@
+@import '../base/mixin';
+@import '../base/variables';
+/* Barra de navegación */
+.nav-bar{
+    background-color: $color-navbar-index;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: $color-texto;
+
+    .logo{
+        width: 250px;  /*ancho*/
+        height: 80px;  /*alto*/
+        padding-left: 15px;
+        object-fit:scale-down;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        padding-right: 15px;
+        margin: 0px;
+
+        li {
+            a {
+                display: block;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 0px 15px;
+                color: $color-texto;
+            }
+
+            a.pagina-activa {
+                border-bottom: 3px solid black;
+            }
+        }
+    }
+}
+
+.navbar-pages {
+    .nav-bar{
+        background-color: $color-navbar-pages;
+    }
+}

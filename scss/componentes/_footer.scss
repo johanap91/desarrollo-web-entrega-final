@@ -1,0 +1,50 @@
+@import '../base/mixin';
+@import '../base/variables';
+/* FOOTER */
+
+.footer-grid{
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #E7CAA3;
+
+    .contenido-footer-grid {
+        display: grid;
+    
+        /* filas y columnas */
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(4, 1fr);
+    
+        /* espacios entre filas y columnas */
+        gap: 0px 20px;
+    
+        /* centrado */
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.logo-slogan {
+    display: inline;
+    margin-right: 40px;
+
+    .logo{
+        height: 60px;
+    }
+}
+
+.redes-sociales {
+    display: inline;
+    margin-left: 40px;
+
+    .logo{
+        height: 30px;
+    }
+}
+
+.bandera {
+    display: block;
+    margin: auto;
+    height: 40px;
+    margin-top: 50px;
+}

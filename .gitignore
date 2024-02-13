@@ -1,2 +1,4 @@
 *.fig
 *.pdf
+package.json
+css/styles.css.map

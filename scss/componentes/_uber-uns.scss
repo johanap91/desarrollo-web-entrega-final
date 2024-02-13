@@ -1,0 +1,23 @@
+@import '../base/mixin';
+@import '../base/variables';
+/*ÜBER UNS*/
+
+.nosotros {
+    margin-left: 45px;
+    @include flex-wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.contenido-uber-uns{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.nosotros-texto {
+    width: 500px;
+}
+
+.mobile {
+    display: none;
+}
